@@ -262,6 +262,7 @@ h2{
   }
   #project-grid {
     grid-template-columns: auto;
+    grid-template-rows: auto;
 
   }
   .project-tile {
