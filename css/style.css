@@ -261,6 +261,9 @@ h2{
     word-wrap: break-word;
   }
   #project-grid {
-    grid-template-columns: auto;
+  }
+  .project-tile {
+   width: 300px;
+   height: auto;
   }
 }
