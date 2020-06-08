@@ -262,6 +262,7 @@ h2{
   }
   #project-grid {
     grid-template-columns: 80%;
+    justify-content: center;
 
   }
 }
