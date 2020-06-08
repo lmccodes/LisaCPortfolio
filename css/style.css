@@ -261,9 +261,6 @@ h2{
     word-wrap: break-word;
   }
   #project-grid {
-    display: grid;
     grid-template-columns: auto;
-    grid-row-gap: 2em;
-    justify-content: space-around;
   }
 }
