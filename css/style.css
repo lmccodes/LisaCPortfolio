@@ -261,7 +261,7 @@ h2{
     word-wrap: break-word;
   }
   #project-grid {
-    grid-template-columns: 100%;
+    grid-template-columns: auto;
 
   }
   .project-tile {
