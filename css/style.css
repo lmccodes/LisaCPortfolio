@@ -234,14 +234,14 @@ h2{
 
 @media screen and (max-width: 600px) {
   body{
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 0.6px;
   }
   h1{
     font-size: 36px;
   }
   h2{
-    font-size: 17.6px;
+    font-size: 23px;
     font-weight: 400;
   }
   #welcome-section {
