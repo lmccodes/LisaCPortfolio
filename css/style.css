@@ -261,9 +261,9 @@ h2{
     word-wrap: break-word;
   }
   #project-grid {
-  }
-  .project-tile {
-   width: 300px;
-   height: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 2em;
+    justify-content: space-around;
   }
 }
