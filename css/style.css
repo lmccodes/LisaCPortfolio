@@ -244,6 +244,10 @@ h2{
     font-size: 23px;
     font-weight: 400;
   }
+  #welcome-section {
+    padding-top: 43vh;
+    padding-bottom: 45vh;
+  }
   #logo-grid {
     grid-template-columns: 68.5px auto;
     grid-template-rows: 72px auto;
@@ -257,12 +261,7 @@ h2{
     word-wrap: break-word;
   }
   #project-grid {
-    grid-template-columns: auto;
+    grid-template-columns: 80%;
 
-
-  }
-  .project-tile {
-   width: 300px;
-   height: auto;
   }
 }
