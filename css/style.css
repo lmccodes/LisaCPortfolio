@@ -208,7 +208,6 @@ h2{
 
 #contact-section {
    padding: 1vw 6vw 5vw 6vw;
-
 }
 
 .fab {
@@ -218,8 +217,8 @@ h2{
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  background-color: var(--main-color);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--magenta);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
 }
 .fab:hover {
