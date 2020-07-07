@@ -140,7 +140,7 @@ h2{
   position: absolute;
   top: 165vh;
 }
-#contact {
+#contact-anchor {
   position: absolute;
   top: 344vh;
 }
@@ -278,6 +278,9 @@ h2{
   }
   #project-grid {
     grid-template-columns: auto;
+  }
+  #contact-anchor {
+    top: 377vh;
   }
 }
 form {
