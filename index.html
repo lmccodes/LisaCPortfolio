@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Lisa Childress Portfolio</title>
-    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/89007d8f43.js" crossorigin="anonymous"></script>
@@ -25,8 +24,8 @@
           <div id="logo">
             <div id="triangle-logo"></div>
           </div>
-          <div id="name"><h1 class="white-text weight-200">Lisa Childress</h1></div>
-          <div id="tagline" class="white-text weight-200">Math teacher turned web developer & coder</div>
+          <div id="name"><h1 class="white-font weight-200">Lisa Childress</h1></div>
+          <div id="tagline" class="white-font weight-200">Math teacher turned web developer & coder</div>
         </div>
       </div>
       <div id="about-anchor"></div>
@@ -86,15 +85,30 @@
               <div id="contact"></div>
               <div id="project-triangle"></div>
               <div id="contact-section">
-                <h2 class="white-text">Contact Me</h2>
-               <div id="contact-grid">
+                <h2 class="white-font">Contact Me</h2>
+                <form class="contact-form">
+                  <form class="contact-form" action="contactform.php" method="post">
+                   <div id="name">
+                     <input type="text" name="contact-name" placeholder="Name"></div>
+                   <div id="email">
+                      <input type="email" name="email-address" placeholder="Email address">
+                    </div>
+                    <div id="message">
+                      <textarea placeholder="Message" rows="10" name="message"></textarea>
+                    </div>
+                    <div id="submit-button">
+                      <input class="submit-button" type="submit" name="submit" value="Submit">
+                    </div>
+                 </form>
+                </div>
+               <!-- <div id="contact-grid">
                 <div>
                   <a id="profile-link" href="https://www.freecodecamp.org/fccc4d91fed-cb5f-4524-b536-d1f38d5a66ee" target="_blank"><i class='fab fa-free-code-camp'></i></a></div>
                  <div><h3>freeCodeCamp</h3></div>
                 <div>
                   <a href="http://m.me/lisa.childress.12" target="_blank"><i class='fab fa-facebook-messenger'></i></a></div>
                  <div><h3>Messenger</h3></div>
-                </div>
+                </div> -->
               </div>
 
   </body>
