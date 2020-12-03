@@ -11,6 +11,9 @@
   --black: #362E38;
   --white: #FBFBFB;
   --light-gray: #F2F2F2;
+  --teal: #47D1CD;
+/* Shadow */
+--shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
 }
 
 body {
@@ -26,17 +29,21 @@ body {
   background: var(--gradient-4);
   filter: var(--filter-5);
 }
-h1{
+h1 {
   font-size: 50px;
 }
-h2{
+h2 {
   font-size: 22px;
   font-weight: 400;
 }
-.white-text{
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.white-text {
   color: var(--white);
 }
-.weight-200{
+.weight-200 {
   font-weight: 200;
 }
 /* Navigation bar */
@@ -55,25 +62,25 @@ h2{
   font-size: 22px;
   text-align: center;
   align-content: center;
-  color: var(--white);
   letter-spacing: 1px;
 }
 .nav-link{
   color: var(--magenta);
   text-decoration: none;
-  padding: 6px 12px 1px 12px;
+  padding: 6px 12px 0px 12px;
   border: 2px solid transparent;
   transition: 0.4s;
 }
 .nav-link:hover {
   border: 2px solid var(--magenta);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  box-shadow: var(--shadow);
 }
 /* Page container */
 #page-container {
   display: grid;
   grid-template-rows: 100vh auto auto auto auto auto;
-  width: 100vw;
+  grid-template-columns: 100vw;
+
 }
 
 /* Welcome section */
@@ -130,7 +137,7 @@ h2{
 }
 #about-section{
   background-color: var(--white);
-  padding: 2vw 6vw 5vw 6vw;
+  padding: 2vw 95px 5vw 95px;
 }
 #about-section p{
   text-align: right;
@@ -139,7 +146,7 @@ h2{
 
 #projects {
   background-color: var(--light-gray);
-  padding: 2vw 5vw 2vw 5vw;
+  padding: 2vw 95px 2vw 95px;
 }
 #project-triangle {
   width: 0;
@@ -162,29 +169,34 @@ h2{
 }
 .project-img {
   position: relative;
+  width: 100%;
 }
 .project-img img{
   display: block;
   width: 100%;
   max-width: 300px;
   height: auto;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow);
+}
+.project-img:hover{
+  opacity: .5;
+  transition: 0.6s ease;
 }
 .project-title {
   text-align: center;
   padding: 6px 0px 6px 0px;
-  border: 2.5px solid transparent;
+  width: 300px;
+  padding-bottom: 1px;
+  border-bottom: 1.5px solid transparent;
 }
 .project-link:link {
   text-decoration: none;
   color: var(--black);
   transition: 0.6s ease;
+
 }
-.project-title:hover {
-   padding: 6px 0px 6px 0px;
-   border: 2.5px solid var(--white);
-   background-color: var(--white);
-   transition: 0.6s ease;
+.project-title:hover > a {
+  color: var(--magenta);
 }
 .project-title:active {
   color: var(--black);
@@ -192,23 +204,49 @@ h2{
 .project-link:visited {
   color: var(--black);
 }
-.img-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  transition: 0.6s ease;
-  background-color: white;
-}
-.project-img:hover .img-overlay {
-  opacity: 0.6;
-}
 
 #contact-section {
-   padding: 1vw 6vw 5vw 6vw;
+   padding: 1vw 95px 5vw 95px;
 }
+
+form {
+  display: grid;
+  grid-template-columns: 300px;
+  row-gap: 20px;
+  width: 300px;
+}
+input {
+  border: 2px solid var(--white);
+  display: block;
+  padding: 10px;
+  width: 100%;
+}
+input:focus,
+textarea:focus {
+  border: 2px solid var(--teal);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+}
+textarea {
+  font-family: ;
+  border: 2px solid var(--white);
+  display: block;
+  padding: 10px;
+  width: 100%;
+  resize: none;
+}
+#submit-button {
+  width: 108%;
+  background-color: var(--white);
+}
+#submit-button:hover {
+  border: 2px solid var(--white);
+  background-color: var(--teal);
+  color: white;
+  transition: 0.7s;
+}
+
 
 .fab {
   padding: 15px;
@@ -219,16 +257,11 @@ h2{
   border-radius: 50%;
   background-color: var(--white);
   color: var(--magenta);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  box-shadow: var(--shadow);
 }
 .fab:hover {
-  background-color: var(--light-gray);
-}
-#contact-grid {
-  display: grid;
-  grid-template-columns: 100px auto;
-  align-items: center;
-  margin-left: 5vw;
+  opacity: 0.5;
+  transition: 0.6s ease;
 }
 
 @media screen and (max-width: 600px) {
