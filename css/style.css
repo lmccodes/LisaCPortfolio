@@ -254,7 +254,7 @@ textarea {
   resize: none;
 }
 #submit-button {
-  width: 108%;
+  width: 100%;
   background-color: var(--white);
 }
 #submit-button:hover {
